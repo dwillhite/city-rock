@@ -1,0 +1,123 @@
+@import "colors";
+
+#about {
+    margin: 0 auto;
+    font-family: 'Oxygen', sans-serif;
+    // font-family: 'THE_HongChawangjanemo', 'Gochi Hand', cursive;
+    font-family: 'the_hongchawangjanemo_2-webfont', cursive;
+}
+
+/***** ABOUT CITY ROCK *****/
+
+
+.about-main {
+    grid-column: 1/-1;
+    grid-row: 2;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: auto auto auto auto auto auto;
+}
+.about-module {
+    color: $white;
+    grid-column: 1/-1;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    min-height: 520px;
+    padding: 20px;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    h2 {
+        margin-bottom: 10px;
+        font-size: 1.75em;
+    }
+    p {
+        text-align: left;
+        font-family: 'Oxygen', sans-serif;
+    }
+}
+.about-title {
+    grid-row: 2;
+    background-image: url("../img/clark-lake.jpg");
+    background-position: 0 0;
+}
+.about-first-title {
+    position: absolute;
+    top: 40px;
+    max-width: 1000px;
+}
+.about-sect-title {
+    border-bottom: 0;
+    text-align: left;
+    font-size: 2em;
+    max-width: 1000px;
+
+}
+
+.about-sub-title {
+    align-self: center;
+    margin-top: 10px;
+    margin-bottom: 60px;
+    max-width: 1000px;
+
+
+}
+.sub-span {
+    font-weight: 100;
+}
+/***** ABOUT TITLE ******/
+
+
+/****** ABOUT FOOD *****/
+.about-food {
+    grid-row: 3;
+    grid-template-columns: auto;
+    grid-template-rows: 1;
+    background-image: url("../img/Bim.jpg");
+    background-position: 0px 0;
+}
+
+/******* ABOUT OWNERS ******/
+.about-owners {
+    grid-row: 4;
+    grid-template-columns: auto;
+    grid-template-rows: 1;
+    background-image: url("../img/back-window.jpg");
+    background-position: 0 0;
+}
+
+@media screen and (min-width: 768px) {
+    .about-module {
+        min-height: 700px;
+    }
+}
+@media screen and (min-width: 1100px) {
+    .about-module {
+        min-height: 900px;
+        background-position: 0 -350px;
+    }
+}
+@media screen and (min-width: 1300px) {
+    .about-module {
+        min-height: 1100px;
+    }
+}
+@media screen and (min-width: 1500px) {
+    .about-module {
+        min-height: 1300px;
+        background-position: 0 -600px;
+    }
+}
+@media screen and (min-width: 2000px) {
+    .about-module {
+        min-height: 1300px;
+        background-position: 0 -1000px;
+    }
+}
+@media screen and (min-width: 3000px) {
+    .about-module {
+        min-height: 1300px;
+        background-position: 0 -1500px;
+    }
+}
